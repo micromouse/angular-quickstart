@@ -11,11 +11,14 @@ export class WelcomeComponent implements OnInit {
   id = "13548193961";
   msg = "我是一个新闻组件的消息";
 
+  //构造函数
   constructor() {
-
+    //nothing
   }
 
+  //初始化
   ngOnInit(): void {
+    //nothing
   }
 
 }
