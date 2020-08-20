@@ -13,7 +13,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
-    //声明模块里有什么东西 只能声明：组件/指令/管道
+    // 声明模块里有什么东西 只能声明：组件/指令/管道
     AppComponent,
     NavMenuComponent,
     HomeComponent,
@@ -22,7 +22,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     WelcomeComponent
   ],
 
-  //声明该模块所依赖的模块
+  // 声明该模块所依赖的模块
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
@@ -35,10 +35,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
     ])
   ],
 
-  //默认情况下是空的
+  // 默认情况下是空的
   providers: [],
 
-  //声明模块的主组件是什么
+  // 声明模块的主组件是什么
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,2 +1,18 @@
 <p>{{Title}}</p>
 <div [id]="id" [title]="msg">调试工具看看我的属性</div>
+
+<h2>用户列表</h2>
+<ul *ngIf="users.length>0">
+  <li *ngFor="let user of users">{{user.name}}-{{user.age}}</li>
+</ul>
+
+<h2>*ngSwitch-<small>score:{{score}}</small></h2>
+<ul [ngSwitch]="score">
+  <li *ngSwitchCase="1">已支付</li>
+  <li *ngSwitchCase="2">订单已经确认</li>
+  <li *ngSwitchCase="3">已发货</li>
+  <li *ngSwitchDefault>无效</li>
+</ul>
+
+<h2>今日日期:</h2>
+<p>{{today | date:'yyyy-MM-dd HH:mm:sss' }}</p>
