@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    FormComponent
   ],
 
   // 声明该模块所依赖的模块
@@ -31,7 +33,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'welcome', component: WelcomeComponent }
+      { path: 'welcome', component: WelcomeComponent },
+      { path: 'form', component: FormComponent }
     ])
   ],
 
